@@ -14,9 +14,6 @@ export function Menubar(){
             <Link to="#">Tools & Brushes</Link>
             <Link to="#">Bath & Body</Link>
             <Link to="#">Sale & Offers</Link>
-            
         </Flex>
-            
-        
     )
 }
