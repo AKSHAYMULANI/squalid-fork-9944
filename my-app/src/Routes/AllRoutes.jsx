@@ -7,7 +7,8 @@ function AllRoutes(){
     return (
         <Routes>
             <Route path="/" element={<MainHeader />} />
-            <Route path="/Makeup" element={<ShowProducts />} />
+            <Route path="/Makeup" element={<ShowProducts tag={"Makeup"} />} />
+            <Route path="/Skincare" element={<ShowProducts tag={"Skincare"} />} />
             <Route path="addProduct" element={<AddProducts />}  />
         </Routes>
     )
