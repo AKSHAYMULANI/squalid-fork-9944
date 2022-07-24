@@ -2,11 +2,11 @@ import Alertbar from "./Alertbar"
 import HeaderBar from "./Header"
 import { Menubar } from "./MenuBar"
 
-function MainHeader(){
+function MainHeader({setQuery,query}){
     return (
         <div>
             <Alertbar />
-            <HeaderBar />
+            <HeaderBar setQuery={setQuery}  query={ query}/>
             <Menubar />
         </div>
     )
