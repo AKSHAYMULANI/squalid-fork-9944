@@ -19,7 +19,7 @@ function ProductFilter({ProTag, value, setValue}){
                     <Radio value="20">$20 to $30</Radio>
                     <Radio value="30">$30 and above</Radio>
                 </Stack>
-                <Button onClick={() => {setValue(-1)}}>Clear</Button>
+                <Button onClick={() => {setValue("-1")}}>Clear</Button>
             </RadioGroup>
             <br />
             

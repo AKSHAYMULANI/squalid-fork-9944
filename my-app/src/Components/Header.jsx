@@ -1,9 +1,10 @@
 import { Image,Flex, Input, Stack, Text, Icon} from "@chakra-ui/react";
 
-import Alertbar from "./Alertbar"
 
 
-function HeaderBar(){
+function HeaderBar({setQuery,query}){
+
+
     return (
         <div>
             <Flex w='100%' m='auto' justifyContent='space-evenly' h='100px' >
@@ -12,7 +13,7 @@ function HeaderBar(){
                 </Flex>
             <Flex w='60%' justifyContent='space-evenly' alignItems='center'>
                     <Flex w='40%' alignItems='center' >
-                        <Input placeholder="🔍  Search" variant='filled' size='md' w='80%' bgColor='gray.200' borderRadius='20px'></Input>
+                        <Input value={query} onChange={e=>setQuery(e.target.value)} placeholder="🔍  Search" variant='filled' size='md' w='80%' bgColor='gray.200' borderRadius='20px'></Input>
                     </Flex>
                     <Flex alignItems='center'>
                         <Image boxSize={'25px'} src={"https://www.sephora.com/img/ufe/icons/stores.svg"} />
